@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<title>yuko inoue</title>
+<link rel="stylesheet" href="asset/css/default.css">
+<link rel="stylesheet" href="asset/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+	<!--header-->
+	
+	<header>
+	<div class="logo">
+		<picture>
+			<source media="(min-width:768px)" srcset="asset/img/img_logo_pc.png" alt="yukoinoue">
+			<img src="asset/img/img_logo.png"　alt="yukoinoue">
+		</picture>
+	</div>	
+<!--	<div id="logo"><img src="asset/img/img_logo.png" alt="logo"></div>名前ロゴ-->		
+	</header>
+
+<!-- ナビメニュー部分 -->
+<div class="NavMenu">
+　<ul>
+　　<li><a href="#">NEWS</a></li>
+　　<li><a href="#">WORKS</a></li>
+　　<li><a href="#">GALLERY</a></li>
+　　<li><a href="#">PROFILE</a></li>
+	<li class="icom_sns">
+		<a href=""><img src="asset/img/icon_facebook.svg" alt="icon_facebook"></a>
+		<a href="https://www.instagram.com/yukoinooue/"><img src="asset/img/icon_instagram.svg" alt="icon_instagram"></a>
+  	</li>
+  </ul>
+</div>
+<!-- ハンバーガーメニュー部分 --> 
+<div class="Toggle_back">
+	<div class="Toggle">
+	<p class="text"></p>
+	<span></span>
+　　 <span></span>
+　　 <span></span>
+	
+
+	</div>
+</div>	
+<!--背景-->
+	<div id="container">
+<!--背景上イラスト-->
+	
+		<div id="illust">
+			<a href=""><div class="contact"><img src="asset/img/img_contact.png" alt="contact"></div></a>
+			<a href=""><div class="gallery"><img src="asset/img/img_gallery.png" alt="gallery"></div></a>
+			<a href=""><div class="profile"><img src="asset/img/img_profile.png" alt="profile"></div></a>
+			<a href=""><div class="works"><img src="asset/img/img_works.png" alt="works"></div></a>
+			<a href=""><div class="top01"><img src="asset/img/img_top01.png" alt="top01"></div></a>
+			<a href=""><div class="top02"><img src="asset/img/img_top02.png" alt="top02"></div></a>
+			
+		</div>
+	</div>
+	<footer>
+		<p>COPYRIGHT(C) YUKO INOUE ALL RIGHTS RESERVED.</p>
+	</footer>
+
+	
+<!--//トグルボタンが押されたときに、クラスを付与-->
+<script type="text/javascript">
+$(function() {
+　$('.Toggle').click(function() {
+　　$(this).toggleClass('open');
+
+　if ($(this).hasClass('open')) {
+　　$('.NavMenu ,.text ,#container ,.Toggle_back').addClass('open');　 //クラスを付与
+　} else {
+　　$('.NavMenu ,.text ,#container ,.Toggle_back').removeClass('open'); //クラスを外す
+　}
+　});
+});
+</script>
+
+
+</body>
+</html>
